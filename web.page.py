@@ -1,7 +1,7 @@
 import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
-from PIL import Image
+
 
 
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
@@ -64,9 +64,7 @@ with st.container():
     st.write("---")
     st.header("My Projects")
     st.write("##")
-    image_column, text_column = st.columns((1, 2))
-    with image_column:
-        st.image(img_lottie_animation)
+   
     with text_column:
         st.subheader("Integrate Lottie Animations Inside Your Streamlit App")
         st.write(
